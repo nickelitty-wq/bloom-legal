@@ -78,3 +78,101 @@ footer {
 }
 footer a { color: var(--ink-soft); border-bottom: 1px solid rgba(0,0,0,0.15); }
 .feature-list { color: var(--ink-soft); }
+
+/* ---- Hero (landing) ---- */
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&display=swap');
+
+.hero {
+  background: #f6ece5;
+  padding: 28px 24px 64px;
+  overflow: hidden;
+}
+.hero-nav {
+  max-width: 1080px;
+  margin: 0 auto 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hero-brand {
+  font-family: 'Fraunces', serif;
+  font-weight: 600;
+  font-size: 19px;
+  color: #2c1a20;
+  letter-spacing: -0.01em;
+}
+.hero-main {
+  max-width: 1080px;
+  margin: 0 auto;
+  position: relative;
+  min-height: 380px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero-headline {
+  font-family: 'Fraunces', serif;
+  font-weight: 400;
+  font-size: clamp(32px, 4.4vw, 54px);
+  line-height: 1.18;
+  text-align: center;
+  color: #2c1a20;
+  max-width: 760px;
+  margin: 0 auto;
+  letter-spacing: -0.01em;
+  position: relative;
+  z-index: 2;
+}
+.panel {
+  position: absolute;
+  width: 220px;
+  border-radius: 22px;
+  padding: 26px 22px;
+  font-family: 'Fraunces', serif;
+  font-size: 19px;
+  line-height: 1.4;
+  color: #fdf3f0;
+  box-shadow: 0 24px 48px rgba(44, 26, 32, 0.18);
+  z-index: 1;
+}
+.panel-left {
+  background: linear-gradient(160deg, #5b3644, #3a2229);
+  top: -8px;
+  left: 0;
+  transform: rotate(-4deg);
+}
+.panel-right {
+  background: linear-gradient(160deg, #d1667f, #a8455f);
+  bottom: -20px;
+  right: 0;
+  transform: rotate(3deg);
+}
+.hero-cta {
+  display: flex;
+  justify-content: center;
+  margin-top: 44px;
+}
+.store-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: #1a1a1a;
+  color: #fff;
+  padding: 11px 22px;
+  border-radius: 12px;
+  text-decoration: none;
+  border: none;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, sans-serif;
+  transition: transform 0.15s ease, opacity 0.15s ease;
+}
+.store-badge:hover { transform: translateY(-2px); opacity: 0.92; }
+.store-badge .store-text { text-align: left; line-height: 1.15; }
+.store-badge .store-small { font-size: 10.5px; color: #d8d8d8; display: block; }
+.store-badge .store-big { font-size: 16px; font-weight: 600; display: block; }
+
+@media (max-width: 780px) {
+  .hero { padding: 24px 18px 48px; }
+  .hero-main { min-height: 0; flex-direction: column; gap: 20px; padding: 20px 0; }
+  .panel { position: static; transform: none; width: 100%; max-width: 320px; }
+  .hero-headline { order: -1; margin-bottom: 4px; }
+}
