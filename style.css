@@ -84,7 +84,7 @@ footer a { color: var(--ink-soft); border-bottom: 1px solid rgba(0,0,0,0.15); }
   display: grid;
   grid-template-columns: 1.1fr 0.9fr;
   align-items: start;
-  padding: 60px 56px;
+  padding: 12vh 10vw;
 }
 .hero2-left {
   padding: 0;
@@ -95,7 +95,7 @@ footer a { color: var(--ink-soft); border-bottom: 1px solid rgba(0,0,0,0.15); }
 .hero2-h1 {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-weight: 900;
-  font-size: clamp(38px, 5.4vw, 52px);
+  font-size: clamp(44px, 7vw, 108px);
   line-height: 1.0;
   letter-spacing: -0.03em;
   color: #111;
@@ -123,8 +123,8 @@ footer a { color: var(--ink-soft); border-bottom: 1px solid rgba(0,0,0,0.15); }
   padding: 0;
 }
 .phone-outer {
-  width: 290px;
-  height: 480px;
+  width: 340px;
+  height: 620px;
   border-radius: 32px;
   background: linear-gradient(160deg, #e75f8e, #c2185b);
   display: flex;
