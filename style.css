@@ -107,7 +107,7 @@ footer a { color: var(--ink-soft); border-bottom: 1px solid rgba(0,0,0,0.15); }
   color: #111;
   margin: 0 0 6px;
 }
-.hero2-h1 .accent-line { color: #d4527e; }
+.hero2-h1.accent-line { color: #d4527e; }
 .hero2-sub {
   font-size: 17px;
   color: #444;
@@ -184,10 +184,10 @@ footer a { color: var(--ink-soft); border-bottom: 1px solid rgba(0,0,0,0.15); }
 .store-badge .store-big { font-size: 14px; font-weight: 600; display: block; color: #fff; }
 
 @media (max-width: 780px) {
-  .hero2 { grid-template-columns: 1fr; }
-  .hero2-left { padding: 40px 24px 24px; text-align: center; align-items: center; }
+  .hero2 { grid-template-columns: 1fr; min-height: auto; align-items: normal; }
+  .hero2-left { padding: 56px 24px 8px; text-align: center; align-items: center; }
   .hero2-sub { margin-bottom: 24px; }
-  .hero2-right { padding: 24px; }
-  .phone-outer { width: 200px; height: 320px; }
-  .phone-frame { width: 140px; height: 272px; }
+  .hero2-right { padding: 8px 24px 56px; }
+  .phone-outer { width: 190px; height: 300px; }
+  .phone-frame { width: 130px; height: 250px; }
 }
