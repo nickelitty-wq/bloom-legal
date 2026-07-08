@@ -79,100 +79,96 @@ footer {
 footer a { color: var(--ink-soft); border-bottom: 1px solid rgba(0,0,0,0.15); }
 .feature-list { color: var(--ink-soft); }
 
-/* ---- Hero (landing) ---- */
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&display=swap');
-
-.hero {
-  background: #f6ece5;
-  padding: 28px 24px 64px;
-  overflow: hidden;
+/* ---- Hero (landing, prayerlock-style) ---- */
+.hero2 {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  min-height: 480px;
 }
-.hero-nav {
-  max-width: 1080px;
-  margin: 0 auto 48px;
+.hero2-left {
+  padding: 64px 48px;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
-.hero-brand {
-  font-family: 'Fraunces', serif;
-  font-weight: 600;
-  font-size: 19px;
-  color: #2c1a20;
-  letter-spacing: -0.01em;
+.hero2-logo {
+  font-weight: 700;
+  font-size: 15px;
+  color: #111;
+  margin-bottom: 28px;
 }
-.hero-main {
-  max-width: 1080px;
-  margin: 0 auto;
-  position: relative;
-  min-height: 380px;
+.hero2-h1 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-weight: 800;
+  font-size: clamp(30px, 4.6vw, 46px);
+  line-height: 1.08;
+  letter-spacing: -0.02em;
+  color: #111;
+  margin: 0 0 6px;
+}
+.hero2-h1 .accent-line { color: #d4527e; }
+.hero2-sub {
+  font-size: 17px;
+  color: #444;
+  margin: 6px 0 32px;
+}
+.hero2-sub .accent { color: #d4527e; font-weight: 600; }
+.hero2-links {
+  margin-top: 36px;
+  font-size: 13px;
+  color: #999;
+}
+.hero2-links a { color: #999; border: none; }
+.hero2-links a:hover { color: #d4527e; }
+.hero2-right {
+  background: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 48px 36px;
 }
-.hero-headline {
-  font-family: 'Fraunces', serif;
-  font-weight: 400;
-  font-size: clamp(32px, 4.4vw, 54px);
-  line-height: 1.18;
-  text-align: center;
-  color: #2c1a20;
-  max-width: 760px;
-  margin: 0 auto;
-  letter-spacing: -0.01em;
-  position: relative;
-  z-index: 2;
-}
-.panel {
-  position: absolute;
-  width: 220px;
-  border-radius: 22px;
-  padding: 26px 22px;
-  font-family: 'Fraunces', serif;
-  font-size: 19px;
-  line-height: 1.4;
-  color: #fdf3f0;
-  box-shadow: 0 24px 48px rgba(44, 26, 32, 0.18);
-  z-index: 1;
-}
-.panel-left {
-  background: linear-gradient(160deg, #5b3644, #3a2229);
-  top: -8px;
-  left: 0;
-  transform: rotate(-4deg);
-}
-.panel-right {
-  background: linear-gradient(160deg, #d1667f, #a8455f);
-  bottom: -20px;
-  right: 0;
-  transform: rotate(3deg);
-}
-.hero-cta {
+.phone-outer {
+  width: 250px;
+  height: 400px;
+  border-radius: 32px;
+  background: linear-gradient(160deg, #e75f8e, #c2185b);
   display: flex;
-  justify-content: center;
-  margin-top: 44px;
-}
-.store-badge {
-  display: inline-flex;
   align-items: center;
-  gap: 10px;
+  justify-content: center;
+  padding: 26px;
+  box-shadow: 0 20px 40px rgba(196, 50, 110, 0.2);
+}
+.phone-frame {
+  width: 170px;
+  height: 340px;
   background: #1a1a1a;
-  color: #fff;
-  padding: 11px 22px;
-  border-radius: 12px;
-  text-decoration: none;
-  border: none;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, sans-serif;
-  transition: transform 0.15s ease, opacity 0.15s ease;
+  border-radius: 30px;
+  padding: 6px;
+  box-shadow: 0 16px 32px rgba(0,0,0,0.28);
 }
-.store-badge:hover { transform: translateY(-2px); opacity: 0.92; }
-.store-badge .store-text { text-align: left; line-height: 1.15; }
-.store-badge .store-small { font-size: 10.5px; color: #d8d8d8; display: block; }
-.store-badge .store-big { font-size: 16px; font-weight: 600; display: block; }
-
+.phone-screen {
+  width: 100%;
+  height: 100%;
+  background: #fdf2f5;
+  border-radius: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.phone-quote {
+  font-family: Georgia, serif;
+  font-size: 16px;
+  line-height: 1.4;
+  text-align: center;
+  color: #3a1a26;
+  margin: 0;
+}
 @media (max-width: 780px) {
-  .hero { padding: 24px 18px 48px; }
-  .hero-main { min-height: 0; flex-direction: column; gap: 20px; padding: 20px 0; }
-  .panel { position: static; transform: none; width: 100%; max-width: 320px; }
-  .hero-headline { order: -1; margin-bottom: 4px; }
+  .hero2 { grid-template-columns: 1fr; }
+  .hero2-left { padding: 40px 24px 24px; text-align: center; align-items: center; }
+  .hero2-sub { margin-bottom: 24px; }
+  .hero2-right { padding: 24px; }
+  .phone-outer { width: 200px; height: 320px; }
+  .phone-frame { width: 140px; height: 272px; }
 }
