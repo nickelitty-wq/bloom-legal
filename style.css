@@ -80,11 +80,17 @@ footer a { color: var(--ink-soft); border-bottom: 1px solid rgba(0,0,0,0.15); }
 .feature-list { color: var(--ink-soft); }
 
 /* ---- Hero (landing, prayerlock-style) ---- */
+body.home {
+  height: 100vh;
+  overflow: hidden;
+}
 .hero2 {
   display: grid;
   grid-template-columns: 1.1fr 0.9fr;
   align-items: start;
   padding: 12vh 10vw;
+  height: 100vh;
+  box-sizing: border-box;
 }
 .hero2-left {
   padding: 0;
@@ -178,7 +184,8 @@ footer a { color: var(--ink-soft); border-bottom: 1px solid rgba(0,0,0,0.15); }
 .store-badge .store-big { font-size: 21px; font-weight: 600; display: block; color: #fff; }
 
 @media (max-width: 780px) {
-  .hero2 { grid-template-columns: 1fr; min-height: auto; align-items: normal; }
+  body.home { height: auto; overflow: visible; }
+  .hero2 { grid-template-columns: 1fr; min-height: auto; height: auto; align-items: normal; }
   .hero2-left { padding: 56px 24px 8px; text-align: center; align-items: center; }
   .hero2-sub { margin-bottom: 24px; }
   .hero2-right { padding: 8px 24px 56px; }
