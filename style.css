@@ -82,13 +82,13 @@ footer a { color: var(--ink-soft); border-bottom: 1px solid rgba(0,0,0,0.15); }
 /* ---- Hero (landing, prayerlock-style) ---- */
 .hero2 {
   display: grid;
-  grid-template-columns: 1.15fr 0.85fr;
+  grid-template-columns: 1.1fr 0.9fr;
+  align-items: center;
+  padding: 44px 40px;
   min-height: 100vh;
-  align-items: start;
-  padding-top: 9vh;
 }
 .hero2-left {
-  padding: 0 48px;
+  padding: 0;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -102,17 +102,17 @@ footer a { color: var(--ink-soft); border-bottom: 1px solid rgba(0,0,0,0.15); }
 .hero2-h1 {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-weight: 800;
-  font-size: clamp(36px, 4.8vw, 52px);
-  line-height: 1.08;
+  font-size: clamp(40px, 5.6vw, 58px);
+  line-height: 1.02;
   letter-spacing: -0.02em;
   color: #111;
   margin: 0 0 6px;
 }
 .hero2-h1.accent-line { color: #d4527e; }
 .hero2-sub {
-  font-size: 17px;
+  font-size: 19px;
   color: #444;
-  margin: 6px 0 32px;
+  margin: 8px 0 32px;
 }
 .hero2-sub .accent { color: #d4527e; font-weight: 600; }
 .hero2-links {
@@ -125,13 +125,13 @@ footer a { color: var(--ink-soft); border-bottom: 1px solid rgba(0,0,0,0.15); }
 .hero2-right {
   background: #ffffff;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
-  padding: 8px 36px;
+  padding: 0;
 }
 .phone-outer {
-  width: 240px;
-  height: 380px;
+  width: 300px;
+  height: 480px;
   border-radius: 32px;
   background: linear-gradient(160deg, #e75f8e, #c2185b);
   display: flex;
@@ -160,7 +160,7 @@ footer a { color: var(--ink-soft); border-bottom: 1px solid rgba(0,0,0,0.15); }
 }
 .phone-quote {
   font-family: Georgia, serif;
-  font-size: 14px;
+  font-size: 17px;
   line-height: 1.4;
   text-align: center;
   color: #3a1a26;
@@ -172,8 +172,8 @@ footer a { color: var(--ink-soft); border-bottom: 1px solid rgba(0,0,0,0.15); }
   gap: 10px;
   background: #1a1a1a;
   color: #fff;
-  padding: 10px 18px;
-  border-radius: 12px;
+  padding: 13px 22px;
+  border-radius: 14px;
   text-decoration: none;
   border: none;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, sans-serif;
@@ -181,8 +181,8 @@ footer a { color: var(--ink-soft); border-bottom: 1px solid rgba(0,0,0,0.15); }
 }
 .store-badge:hover { transform: translateY(-2px); opacity: 0.92; }
 .store-badge .store-text { text-align: left; line-height: 1.15; }
-.store-badge .store-small { font-size: 10px; color: #d8d8d8; display: block; }
-.store-badge .store-big { font-size: 14px; font-weight: 600; display: block; color: #fff; }
+.store-badge .store-small { font-size: 11px; color: #d8d8d8; display: block; }
+.store-badge .store-big { font-size: 16px; font-weight: 600; display: block; color: #fff; }
 
 @media (max-width: 780px) {
   .hero2 { grid-template-columns: 1fr; min-height: auto; align-items: normal; }
