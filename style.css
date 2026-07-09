@@ -155,15 +155,15 @@ body.home {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 20px;
+  padding: 0;
+  overflow: hidden;
 }
-.phone-quote {
-  font-family: Georgia, serif;
-  font-size: 17px;
-  line-height: 1.4;
-  text-align: center;
-  color: #3a1a26;
-  margin: 0;
+.phone-screenshot {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 26px;
+  display: block;
 }
 .store-badge {
   display: inline-flex;
