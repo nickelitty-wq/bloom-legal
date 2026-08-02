@@ -136,12 +136,12 @@ body.home {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 26px;
+  padding: 14px;
   box-shadow: 0 20px 40px rgba(196, 50, 110, 0.2);
 }
 .phone-frame {
-  width: 165px;
-  height: 330px;
+  width: 312px;
+  height: 592px;
   background: #1a1a1a;
   border-radius: 30px;
   padding: 6px;
@@ -190,5 +190,5 @@ body.home {
   .hero2-sub { margin-bottom: 24px; }
   .hero2-right { padding: 8px 24px 56px; }
   .phone-outer { width: 190px; height: 300px; }
-  .phone-frame { width: 130px; height: 250px; }
+  .phone-frame { width: 162px; height: 272px; }
 }
