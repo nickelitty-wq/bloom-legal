@@ -81,114 +81,135 @@ footer a { color: var(--ink-soft); border-bottom: 1px solid rgba(0,0,0,0.15); }
 
 /* ---- Hero (landing, prayerlock-style) ---- */
 body.home {
-  height: 100vh;
-  overflow: hidden;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
 .hero2 {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  padding: 48px 32px;
+}
+.hero2-inner {
+  width: 100%;
+  max-width: 1160px;
+  margin: 0 auto;
   display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
-  align-items: start;
-  padding: 12vh 10vw;
-  height: 100vh;
-  box-sizing: border-box;
+  grid-template-columns: 1.15fr 0.85fr;
+  align-items: center;
+  gap: 64px;
 }
 .hero2-left {
-  padding: 0;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
 .hero2-h1 {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  font-weight: 900;
-  font-size: clamp(44px, 7vw, 108px);
-  line-height: 1.0;
-  letter-spacing: -0.03em;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-weight: 600;
+  font-size: clamp(48px, 5.8vw, 76px);
+  line-height: 1.05;
+  letter-spacing: normal;
   color: #111;
-  margin: 0 0 6px;
+  margin: 0;
 }
 .hero2-h1.accent-line { color: #d4527e; }
 .hero2-sub {
-  font-size: 19px;
-  color: #444;
-  margin: 8px 0 32px;
+  font-size: clamp(22px, 2.5vw, 30px);
+  font-weight: 400;
+  line-height: 1.35;
+  color: #555;
+  margin: 24px 0 40px;
 }
-.hero2-sub .accent { color: #d4527e; font-weight: 600; }
-.hero2-links {
-  margin-top: 36px;
-  font-size: 13px;
-  color: #999;
-}
-.hero2-links a { color: #999; border: none; }
-.hero2-links a:hover { color: #d4527e; }
+.hero2-sub .accent { color: #d4527e; }
 .hero2-right {
-  background: #ffffff;
   display: flex;
-  align-items: flex-start;
   justify-content: center;
-  padding: 0;
 }
-.phone-outer {
-  width: 340px;
-  height: 620px;
-  border-radius: 32px;
-  background: linear-gradient(160deg, #e75f8e, #c2185b);
+.phone-card {
+  container-type: inline-size;
+  width: 100%;
+  max-width: max(300px, min(460px, calc((100vh - 270px) / 1.26)));
+  background: #f6c9d8;
+  border-radius: 24px;
+  box-shadow: 0 18px 48px rgba(212, 82, 126, 0.18), 0 2px 8px rgba(0, 0, 0, 0.04);
+  padding: 40px 0;
   display: flex;
-  align-items: center;
   justify-content: center;
-  padding: 14px;
-  box-shadow: 0 20px 40px rgba(196, 50, 110, 0.2);
 }
-.phone-frame {
-  width: 312px;
-  height: 592px;
-  background: #1a1a1a;
-  border-radius: 30px;
-  padding: 6px;
-  box-shadow: 0 16px 32px rgba(0,0,0,0.28);
+.iphone {
+  position: relative;
+  width: 58cqw;
+  aspect-ratio: 9 / 19.5;
+  background: #111;
+  border-radius: 9cqw;
+  padding: 1.5cqw;
+  box-shadow:
+    inset 0 0 0 1px #3a3a3a,
+    0 20px 40px rgba(0, 0, 0, 0.22);
 }
-.phone-screen {
+.iphone-screen {
   width: 100%;
   height: 100%;
-  background: #fdf2f5;
-  border-radius: 26px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0;
+  border-radius: 7.6cqw;
   overflow: hidden;
+  background: #fdf2f5;
+}
+.iphone-island {
+  position: absolute;
+  top: 3.6cqw;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 17cqw;
+  height: 4.8cqw;
+  background: #000;
+  border-radius: 999px;
 }
 .phone-screenshot {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 26px;
   display: block;
 }
 .store-badge {
   display: inline-flex;
   align-items: center;
-  gap: 13px;
+  gap: 14px;
+  height: 64px;
   background: #1a1a1a;
   color: #fff;
-  padding: 18px 30px;
+  padding: 0 28px 0 24px;
   border-radius: 16px;
   text-decoration: none;
   border: none;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, sans-serif;
   transition: transform 0.15s ease, opacity 0.15s ease;
 }
+.store-badge svg { width: 28px; height: 28px; }
 .store-badge:hover { transform: translateY(-2px); opacity: 0.92; }
 .store-badge .store-text { text-align: left; line-height: 1.15; }
 .store-badge .store-small { font-size: 13px; color: #d8d8d8; display: block; }
-.store-badge .store-big { font-size: 21px; font-weight: 600; display: block; color: #fff; }
+.store-badge .store-big { font-size: 22px; font-weight: 600; display: block; color: #fff; }
 
-@media (max-width: 780px) {
-  body.home { height: auto; overflow: visible; }
-  .hero2 { grid-template-columns: 1fr; min-height: auto; height: auto; align-items: normal; }
-  .hero2-left { padding: 56px 24px 8px; text-align: center; align-items: center; }
-  .hero2-sub { margin-bottom: 24px; }
-  .hero2-right { padding: 8px 24px 56px; }
-  .phone-outer { width: 190px; height: 300px; }
-  .phone-frame { width: 162px; height: 272px; }
+.site-footer {
+  margin: 0;
+  padding: 24px 24px 32px;
+  border: none;
+  text-align: center;
+  font-size: 13px;
+  line-height: 1.8;
+  color: #999;
+}
+.site-footer a { color: #999; border: none; }
+.site-footer a:hover { color: #d4527e; }
+
+@media (max-width: 799px) {
+  .hero2 { padding: 48px 20px 24px; }
+  .hero2-inner { grid-template-columns: 1fr; gap: 48px; }
+  .hero2-left { align-items: center; text-align: center; }
+  .hero2-h1 { font-size: clamp(36px, 10vw, 56px); }
+  .hero2-sub { font-size: clamp(18px, 5vw, 24px); margin: 16px 0 32px; }
+  .phone-card { max-width: 400px; margin: 0 auto; }
 }
