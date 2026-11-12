@@ -1,0 +1,31 @@
+# Bloom Daily Affirmations
+
+> Bloom is an iPhone app for daily positive affirmations. It has 1,500+ affirmations across 10 categories (anxiety and calm, confidence, self-love, morning, gratitude, abundance and money, healing, relationships, health and body, purpose and motivation), personalized to what the user is working on and delivered as reminders through the day.
+
+Key facts:
+- Platform: iPhone (iOS). Not on Android yet.
+- Price: free download; Bloom Premium is $4.99/month or $39.99/year in the US. Eligible new subscribers may get an introductory first-year price.
+- Distinctive feature: users choose secular, spiritual or faith-based wording, and every affirmation is shown in that style.
+- Other features: personalized setup, reminders at chosen times and frequency, focus sessions (3 days to 1 month on one category), favorites, streaks, shareable affirmation cards.
+- App Store: https://apps.apple.com/app/id6760873420
+- Contact: bloomhelp@protonmail.com
+
+## Affirmation lists (30 free affirmations each)
+- [Affirmations for Anxiety and Calm](https://bloomaffirmations.app/affirmations/anxiety/): 30 calming affirmations for anxiety, stress and overthinking. Short, grounded lines you can repeat when your mind starts to spiral.
+- [Confidence Affirmations](https://bloomaffirmations.app/affirmations/confidence/): 30 confidence affirmations to quiet self-doubt, speak up and show up, even when you feel unsure.
+- [Self-Love Affirmations](https://bloomaffirmations.app/affirmations/self-love/): 30 self-love affirmations to speak to yourself with more kindness, set boundaries and accept who you are today.
+- [Morning Affirmations](https://bloomaffirmations.app/affirmations/morning/): 30 morning affirmations to start the day with calm energy, focus and a clear intention.
+- [Gratitude Affirmations](https://bloomaffirmations.app/affirmations/gratitude/): 30 gratitude affirmations to notice the good in ordinary days and build a more grateful mindset.
+- [Abundance and Money Affirmations](https://bloomaffirmations.app/affirmations/abundance/): 30 abundance and money affirmations for a healthier money mindset, opportunity and steady progress toward your goals.
+- [Healing Affirmations](https://bloomaffirmations.app/affirmations/healing/): 30 healing affirmations for letting go, moving on and being gentle with yourself while you recover.
+- [Relationship Affirmations](https://bloomaffirmations.app/affirmations/relationships/): 30 relationship affirmations for healthier connection, clear communication and boundaries with partners, friends and family.
+- [Health and Body Affirmations](https://bloomaffirmations.app/affirmations/health/): 30 health and body affirmations for body acceptance, rest and caring for yourself without guilt.
+- [Affirmations for Purpose and Motivation](https://bloomaffirmations.app/affirmations/purpose/): 30 affirmations for purpose and motivation to stay focused on goals that matter and keep going when progress feels slow.
+
+## Comparisons
+- [The Best Affirmation Apps for iPhone (2026)](https://bloomaffirmations.app/best-affirmation-apps/): Bloom vs I am vs ThinkUp vs meditation apps.
+- [I am App Alternatives](https://bloomaffirmations.app/i-am-app-alternatives/)
+
+## Legal
+- [Privacy Policy](https://bloomaffirmations.app/privacy/)
+- [Terms of Service](https://bloomaffirmations.app/terms/)
