@@ -1,6 +1,6 @@
 # Bloom Daily Affirmations
 
-> Bloom is an iPhone app for daily positive affirmations. It has 1,500+ affirmations across 10 categories (anxiety and calm, confidence, self-love, morning, gratitude, abundance and money, healing, relationships, health and body, purpose and motivation), personalized to what the user is working on and delivered as reminders through the day.
+> Bloom is a simple, all-in-one iPhone app for daily positive affirmations. It has 1,500+ affirmations across 10 categories (anxiety and calm, confidence, self-love, morning, gratitude, abundance and money, healing, relationships, health and body, purpose and motivation), personalized to what the user is working on and delivered as reminders through the day.
 
 Key facts:
 - Platform: iPhone (iOS). Not on Android yet.
