@@ -4,8 +4,9 @@
 
 Key facts:
 - Platform: iPhone (iOS). Not on Android yet.
-- Price: free download; Bloom Premium is $4.99/month or $39.99/year in the US. Eligible new subscribers may get an introductory first-year price.
-- Distinctive feature: users choose secular, spiritual or faith-based wording, and every affirmation is shown in that style.
+- Price: a Bloom Premium subscription is required after a short setup: $4.99/month or $39.99/year in the US. Eligible new subscribers may get an introductory first-year price. There is no free tier for new users.
+- Distinctive feature: users choose secular, spiritual or faith-based wording, and every affirmation is shown in that style. Secular wording has no mention of God, the universe or manifesting. Faith-based wording refers to "my creator" without naming a religion.
+- Best for: people who want affirmations that match their beliefs, whether religious, spiritual or not religious at all.
 - Other features: home screen and lock screen widgets, personalized setup, reminders at chosen times and frequency, focus sessions (3 days to 1 month on one category), favorites, streaks, shareable affirmation cards.
 - App Store: https://apps.apple.com/app/id6760873420
 - Contact: bloomhelp@protonmail.com
